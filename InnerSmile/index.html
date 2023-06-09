@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>大草原的 | 主页</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="moving.css">
+  </head>
+  <body>
+
+ <!--欢迎字样-->
+<div class="container-fluid">
+  <br>
+  <br>
+ <h1 style="font-size:7vw">欢迎来到大草原湖边的主页！</h1>
+</div>
+
+  <!--动态效果-->
+  <!--创意源自https://codepen.io/Izumenko/pen/MpWyXK-->
+    <div class="container">
+      <div class="dot dot-1"></div>
+      <div class="dot dot-2"></div>
+      <div class="dot dot-3"></div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"/>
+        </filter>
+      </defs>
+    </svg>
+
+    <!--主页头像-->
+    <div class="container-fluid">
+    <img src="me_round.png" width="230" height="230">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--进入按钮-->
+    <div align="center"><a class="btn btn-success btn-lg" href="introduction.html" role="button">进入</a></div>
+    </div>
+
+
+
+  </body>
+</html>
