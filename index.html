@@ -2,55 +2,51 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>动森小动物你pick谁~</title>
-    <script src="number.js">
-    </script>
+    <title>大草原的 | 主页</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="moving.css">
   </head>
   <body>
-  <body background="动森背景.jpg">
 
-    <style>
-    html {
-       font-family: sans-serif;
-     }
+ <!--欢迎字样-->
+<div class="container-fluid">
+  <br>
+  <br>
+ <h1 style="font-size:7vw">欢迎来到大草原湖边的主页！</h1>
+</div>
 
-     body {
-       color:white;
-       width: 100%;
-       max-width: 900px;
-       min-width: 480px;
-       margin: 0 auto;
-     }
-
-    div.bt{
-      background-color: #006633;
-      opacity:0.6;
-      color:white;
-      text-align: center;
-    }
-
-    </style>
-
-  <div class="bt"><p>点击按钮输入名字和小动物互动吧。</p>
-    <button onclick="myFunction()">点我</button>
-    <p id="demo"></p>
-  </div>
-    <script>
-    function myFunction(){
-    	var x;
-    	var person=prompt("请输入你的名字","Harry Potter");
-    	if (person!=null && person!=""){
-    	    x="你好 " + person + "! 欢迎来到动森乐园~";
-    	    document.getElementById("demo").innerHTML=x;
-    	}
-    }
-    </script>
-
-    <h1>请按心情选择0-9之间的一个数字邀请小动物上岛安家吧~</h1>
-    <div class="form">
-         <label for="numberField">请输入0-9之间的一个数字： </label><input type="text" id="numberField" class="numberField">
-         <button onclick="checkNumber()">提交</button>
+  <!--动态效果-->
+  <!--创意源自https://codepen.io/Izumenko/pen/MpWyXK-->
+    <div class="container">
+      <div class="dot dot-1"></div>
+      <div class="dot dot-2"></div>
+      <div class="dot dot-3"></div>
     </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"/>
+        </filter>
+      </defs>
+    </svg>
+
+    <!--主页头像-->
+    <div class="container-fluid">
+    <img src="me_round.png" width="230" height="230">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--进入按钮-->
+    <div align="center"><a class="btn btn-success btn-lg" href="introduction.html" role="button">进入</a></div>
+    </div>
+
 
 
   </body>
