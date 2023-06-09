@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>动森小动物你pick谁~</title>
+    <script src="number.js">
+    </script>
+  </head>
+  <body>
+  <body background="动森背景.jpg">
+
+    <style>
+    html {
+       font-family: sans-serif;
+     }
+
+     body {
+       color:white;
+       width: 100%;
+       max-width: 900px;
+       min-width: 480px;
+       margin: 0 auto;
+     }
+
+    div.bt{
+      background-color: #006633;
+      opacity:0.6;
+      color:white;
+      text-align: center;
+    }
+
+    </style>
+
+  <div class="bt"><p>点击按钮输入名字和小动物互动吧。</p>
+    <button onclick="myFunction()">点我</button>
+    <p id="demo"></p>
+  </div>
+    <script>
+    function myFunction(){
+    	var x;
+    	var person=prompt("请输入你的名字","Harry Potter");
+    	if (person!=null && person!=""){
+    	    x="你好 " + person + "! 欢迎来到动森乐园~";
+    	    document.getElementById("demo").innerHTML=x;
+    	}
+    }
+    </script>
+
+    <h1>请按心情选择0-9之间的一个数字邀请小动物上岛安家吧~</h1>
+    <div class="form">
+         <label for="numberField">请输入0-9之间的一个数字： </label><input type="text" id="numberField" class="numberField">
+         <button onclick="checkNumber()">提交</button>
+    </div>
+
+
+  </body>
+</html>
